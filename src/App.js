@@ -7,21 +7,20 @@ import { PersistGate } from 'redux-persist/integration/react';
 import store, { persistor } from './store';
 import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
-import RotaPrinc from './routes';
-
+import Routes from './routes';
 
 function App() {
   return (
-    <BrowserRouter>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <Header />
-        <RotaPrinc />
-        <GlobalStyle />
-        <ToastContainer autoClose={3000} className="toast-container" />
+        <BrowserRouter>
+          <Header />
+          <Routes />
+          <GlobalStyle />
+          <ToastContainer autoClose={3000} className="toast-container" />
+        </BrowserRouter>
       </PersistGate>
     </Provider>
-    </BrowserRouter>
   );
 }
 

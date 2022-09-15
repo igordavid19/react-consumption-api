@@ -19,13 +19,19 @@ export default createGlobalStyle`
   }
   button {
     cursor: pointer;
-    background: ${colors.primaryColor};
+    background: #154c79;
     border: none;
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
     font-weight: 700;
+    transition: all 300ms;
   }
+
+  button:hover {
+    filter: brightness(75%)
+  }
+
   a {
     text-decoration: none;
     color: ${colors.primaryColor};
@@ -37,14 +43,15 @@ export default createGlobalStyle`
     background: #228B22;
     color: white;
   }
-  body .Toastify .Toastify__toast-container .Toastify__toast--error {
+  body .Toastify .Toastify__toast-container .Toastify__toast--error  {
     background: #FF0000;
     color: white;
+    icon: white;
   }
 `;
 
 export const Container = styled.section`
-  max-width: 360px;
+  max-width: 480px;
   background: #fff;
   margin: 30px auto;
   padding: 30px;
