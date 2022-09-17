@@ -16,7 +16,7 @@ export function loginSuccess(payload) {
 
 export function loginFailure(payload) {
   return {
-    type: types.LOGIN_FAILED,
+    type: types.LOGIN_FAILURE,
     payload,
   };
 }
@@ -44,7 +44,7 @@ export function registerCreatedSuccess(payload) {
 
 export function registerFailure(payload) {
   return {
-    type: types.REGISTER_FAILED,
+    type: types.REGISTER_FAILURE,
     payload,
   };
 }

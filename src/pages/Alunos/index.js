@@ -31,7 +31,7 @@ export default function Alunos() {
           <div key={String(aluno.id)}>
             <ProfilePicture>
               {get(aluno, 'Photos[0].url', false)
-              ? <img src={aluno.Photos[0].url} alt="" />
+              ? <img crossOrigin="anonymous" src={aluno.Photos[0].url} alt="" />
               : <FaUserCircle size={36} />}
             </ProfilePicture>
 
