@@ -1,7 +1,7 @@
 # CRUD - Sistema Colégio
 Projeto fictício CRUD de um colégio
 
-O projeto tem maior foco um CRUD fictício em uma API (feita por mim e hospedada no GCP), também possui área com lista de alunos com foto, espaço estilizado para cadastro,
+O projeto tem maior foco realizar CRUD em uma API (feita por mim e hospedada no GCP), também possui área com lista de alunos com foto, espaço estilizado para cadastro,
 apagar e editar usuários e alunos;
 
 Projeto com base frontend ReactJS, componetizado. (Utilizados: React-redux, Hooks, Saga, Persist, Router Dom);
